@@ -1,5 +1,5 @@
 -- ╔══════════════════════════════════════════════════════════════════╗
--- ║          EXCHANGE.HOOK v1.2.4 - Firebase Key + Exploit          ║
+-- ║          EXCHANGE.HOOK v1.2.5 - Firebase Key + Exploit          ║
 -- ║          Key Validation → Original Script (FIXED)                ║
 -- ╚══════════════════════════════════════════════════════════════════╝
 
@@ -189,8 +189,8 @@ do
     local RS           = game:GetService("RunService")
     local LP           = game:GetService("Players").LocalPlayer
 
-    local FIREBASE_URL = "https://exchangehookkeys-default-rtdb.firebaseio.com/"
-    local WEBHOOK_URL  = "https://discordapp.com/api/webhooks/1480594570214637638/7rCQQjiX9BFNkRj-ePdRO6ssBhSB4htV-wAaKjw8Id7IMwVacFiGV0Tz0TcWodkbDcmi"
+    local FIREBASE_URL = "https://exchange-hook-keys-default-rtdb.firebaseio.com/"
+    local WEBHOOK_URL  = "https://discord.com/api/webhooks/1480594570214637638/7rCQQjiX9BFNkRj-ePdRO6ssBhSB4htV-wAaKjw8Id7IMwVacFiGV0Tz0TcWodkbDcmi"
     local FOLDER       = "ExchangeHook"
     local keyEvent     = Instance.new("BindableEvent")
 
