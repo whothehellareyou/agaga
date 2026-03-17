@@ -1,6 +1,6 @@
 -- ╔══════════════════════════════════════════════════════════════════╗
--- ║          EXCHANGE.HOOK v1.2.7 - Firebase Key + Exploit          ║
--- ║          Key Validation → Original Script (COMPLETE)             ║
+-- ║          EXCHANGE.HOOK v1.2.4 - Firebase Key + Exploit          ║
+-- ║          Key Validation → Original Script (FIXED)                ║
 -- ╚══════════════════════════════════════════════════════════════════╝
 
 local HttpService = game:GetService("HttpService")
@@ -179,8 +179,7 @@ end
 wait(0.5)
 
 -- ═══════════════════════════════════════════════════════════════════
--- ORIGINAL SCRIPT - COMPLETE AND UNMODIFIED
--- INCLUDES ALL SETUP CODE (lines 1-448) PLUS MAIN CODE (449+)
+-- ORIGINAL SCRIPT - WITH ENUM FIX APPLIED
 -- ═══════════════════════════════════════════════════════════════════
 
 local _KS_done = false
@@ -10253,7 +10252,7 @@ local function applyThirdPerson(enabled)
         end)
         player.CameraMode = Enum.CameraMode.LockFirstPerson
         pcall(function()
-            player.DevComputerCameraMode = Enum.DevComputerCameraMovementMode.Default
+            player.DevComputerCameraMode = Enum.DevComputerCameraMovementMode.Classic
         end)
         -- restore original zoom after a tick so the game accepts it
         task.delay(0.1, function()
